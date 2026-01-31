@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Book a legal consultation with Sterling & Associates">
+    <title>Book Consultation - Sterling & Associates</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <i class="fas fa-balance-scale"></i>
+                    <span>Sterling & Associates</span>
+                </div>
+                <ul class="nav-menu" id="navMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="profile.html">Our Team</a></li>
+                    <li><a href="blog.html">Legal Insights</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="appointment.html" class="btn-appointment active">Book Consultation</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Book Your Consultation</h1>
+            <p>Take the First Step Towards Legal Resolution</p>
+        </div>
+    </section>
+
+    <!-- Appointment Benefits -->
+    <section class="appointment-benefits">
+        <div class="container">
+            <div class="benefits-grid">
+                <div class="benefit-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Flexible Scheduling</h3>
+                    <p>Choose a time that works best for you</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-video"></i>
+                    <h3>Virtual & In-Person</h3>
+                    <p>Meet us online or at our office</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Confidential</h3>
+                    <p>100% secure and private consultation</p>
+                </div>
+                <div class="benefit-card">
+                    <i class="fas fa-user-tie"></i>
+                    <h3>Expert Advice</h3>
+                    <p>Direct access to experienced attorneys</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Form -->
+    <section class="appointment-section">
+        <div class="container">
+            <div class="appointment-grid">
+                <div class="appointment-form-wrapper">
+                    <h2>Schedule Your Consultation</h2>
+                    <p class="form-intro">Please fill out the form below to book your appointment. We'll confirm your booking within 2 hours.</p>
+                    
+                    <form class="appointment-form" id="appointmentForm">
+                        <div class="form-section">
+                            <h3><i class="fas fa-user"></i> Personal Information</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="email">Email Address *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone Number *</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3><i class="fas fa-briefcase"></i> Service Details</h3>
+                            <div class="form-group">
+                                <label for="service">Select Service *</label>
+                                <select id="service" name="service" required>
+                                    <option value="">-- Choose a Service --</option>
+                                    <option value="criminal">Criminal Law</option>
+                                    <option value="civil">Civil Litigation</option>
+                                    <option value="family">Family Law</option>
+                                    <option value="divorce">Divorce & Matrimonial</option>
+                                    <option value="property">Property & Real Estate Law</option>
+                                    <option value="corporate">Corporate & Business Law</option>
+                                    <option value="cyber">Cyber Law</option>
+                                    <option value="consultation">General Legal Consultation</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="consultationType">Consultation Type *</label>
+                                <select id="consultationType" name="consultationType" required>
+                                    <option value="">-- Choose Type --</option>
+                                    <option value="in-person">In-Person (Office Visit)</option>
+                                    <option value="video">Video Call (Zoom/Google Meet)</option>
+                                    <option value="phone">Phone Call</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3><i class="fas fa-calendar-alt"></i> Preferred Date & Time</h3>
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="date">Preferred Date *</label>
+                                    <input type="date" id="date" name="date" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="time">Preferred Time *</label>
+                                    <select id="time" name="time" required>
+                                        <option value="">-- Choose Time --</option>
+                                        <option value="09:00">09:00 AM</option>
+                                        <option value="10:00">10:00 AM</option>
+                                        <option value="11:00">11:00 AM</option>
+                                        <option value="12:00">12:00 PM</option>
+                                        <option value="14:00">02:00 PM</option>
+                                        <option value="15:00">03:00 PM</option>
+                                        <option value="16:00">04:00 PM</option>
+                                        <option value="17:00">05:00 PM</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="alternateDate">Alternate Date (Optional)</label>
+                                <input type="date" id="alternateDate" name="alternateDate">
+                            </div>
+                        </div>
+
+                        <div class="form-section">
+                            <h3><i class="fas fa-comment-alt"></i> Case Details</h3>
+                            <div class="form-group">
+                                <label for="caseDetails">Brief Description of Your Legal Matter *</label>
+                                <textarea id="caseDetails" name="caseDetails" rows="5" placeholder="Please provide a brief overview of your legal situation..." required></textarea>
+                                <small>Note: Do not include sensitive information at this stage</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="urgency">Urgency Level *</label>
+                                <select id="urgency" name="urgency" required>
+                                    <option value="">-- Select Urgency --</option>
+                                    <option value="normal">Normal - Within a week</option>
+                                    <option value="urgent">Urgent - Within 2-3 days</option>
+                                    <option value="emergency">Emergency - As soon as possible</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="terms" name="terms" required>
+                            <label for="terms">I agree to the <a href="#">terms and conditions</a> and <a href="#">privacy policy</a> *</label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-calendar-check"></i> Book Consultation
+                        </button>
+                    </form>
+                </div>
+
+                <div class="appointment-info">
+                    <div class="info-box">
+                        <h3>What to Expect</h3>
+                        <ul class="expectation-list">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Confirmation</strong>
+                                    <p>You'll receive a confirmation email within 2 hours</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Preparation</strong>
+                                    <p>We'll send you a checklist of documents to prepare</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Consultation</strong>
+                                    <p>Meet with our expert attorney at your scheduled time</p>
+                                </div>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                <div>
+                                    <strong>Follow-up</strong>
+                                    <p>Receive a detailed action plan and next steps</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="info-box">
+                        <h3>Consultation Fees</h3>
+                        <div class="fee-item">
+                            <span>Initial Consultation (30 mins)</span>
+                            <span class="fee">₹2,000</span>
+                        </div>
+                        <div class="fee-item">
+                            <span>Extended Consultation (60 mins)</span>
+                            <span class="fee">₹3,500</span>
+                        </div>
+                        <div class="fee-item">
+                            <span>Emergency Consultation</span>
+                            <span class="fee">₹5,000</span>
+                        </div>
+                        <p class="fee-note"><i class="fas fa-info-circle"></i> Fees may be adjusted based on case complexity</p>
+                    </div>
+
+                    <div class="info-box contact-box">
+                        <h3>Need Immediate Help?</h3>
+                        <p>For urgent matters, please call us directly:</p>
+                        <a href="tel:+911145678900" class="contact-link">
+                            <i class="fas fa-phone"></i> +91 11 4567 8900
+                        </a>
+                        <p class="or-text">or</p>
+                        <a href="mailto:consult@sterlinglaw.com" class="contact-link">
+                            <i class="fas fa-envelope"></i> consult@sterlinglaw.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Message (Hidden by default) -->
+    <div class="success-modal" id="successModal">
+        <div class="success-content">
+            <div class="success-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h2>Consultation Booked Successfully!</h2>
+            <p>Thank you for choosing Sterling & Associates. We've received your consultation request and will send you a confirmation email shortly.</p>
+            <button class="btn btn-primary" onclick="closeSuccessModal()">Close</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <div class="footer-logo">
+                        <i class="fas fa-balance-scale"></i>
+                        <span>Sterling & Associates</span>
+                    </div>
+                    <p>Providing trusted legal solutions with integrity and excellence for over 25 years.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="profile.html">Our Team</a></li>
+                        <li><a href="blog.html">Legal Insights</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Practice Areas</h3>
+                    <ul>
+                        <li><a href="services.html#criminal">Criminal Law</a></li>
+                        <li><a href="services.html#civil">Civil Litigation</a></li>
+                        <li><a href="services.html#family">Family Law</a></li>
+                        <li><a href="services.html#property">Property Law</a></li>
+                        <li><a href="services.html#corporate">Corporate Law</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Contact Info</h3>
+                    <ul class="contact-info">
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Legal Plaza, Suite 500<br>New Delhi, 110001</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span>+91 11 4567 8900</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span>info@sterlinglaw.com</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-clock"></i>
+                            <span>Mon - Sat: 9:00 AM - 6:00 PM</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sterling & Associates. All Rights Reserved.</p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
